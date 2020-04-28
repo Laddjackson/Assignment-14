@@ -6,77 +6,81 @@
         <title>Totally not localhost:3000</title>
     </head>
     <body>
-        <div id="div-intro-content">
-            <h1>A Database of Plants</h1>
-            <div id="div-command-panel">
-                <h3>Database command panel</h3>
-                <button id="btn-open-editor">Open Editor</button>
-                <button id="btn-open-adder">Add Plant</button>
+        <div id="content">
+            <div id="div-intro-content">
+                <h1>A Database of Plants</h1>
+                <div id="div-command-panel">
+                    <h3>Database command panel</h3>
+                    <button id="btn-open-editor">Open Editor</button>
+                    <button id="btn-open-adder">Add Plant</button>
+                </div>
             </div>
+            <div id="form">
+                <div id="plant-details" class="plant-form hidden">
+                    <h2 class="panel">Plant Details</h2>
+                    <span id="span-response-details"></span>
+                    <span id="plant-id" class="hidden"></span>
+                    <p>
+                        <label for="txt-name">Name: </label>
+                        <input id="txt-name">
+                    </p>
+                    <p>
+                        <label for="txt-species">Species: </label>
+                        <input id="txt-species">
+                    </p>
+                    <p>
+                        <label for="txt-genus">Genus: </label>
+                        <input id="txt-genus">
+                    </p>
+                    <p>
+                        <label for="txt-life-span">Life Span: </label>
+                        <input id="txt-life-span">
+                    </p>
+                    <p>
+                        <label for="txt-height">Height: </label>
+                        <input id="txt-height">
+                    </p>
+                    <p>
+                        <label for="txt-continents">Continents: </label>
+                        <textarea id="txt-continents">
+                        </textarea>
+                    </p>
+                    <button id="btn-edit-plant">Edit Plant</button>
+                    <button id="btn-delete-plant">Delete Plant</button>
+                </div>
+                <div id="add-plant" class="plant-form hidden">
+                    <h2 class="panel">Add Plant</h2>
+                    <span id="span-response-add"></span>
+                    <p>
+                        <label for="txt-add-name">Name: </label>
+                        <input id="txt-add-name">
+                    </p>
+                    <p>
+                        <label for="txt-add-species">Species: </label>
+                        <input id="txt-add-species">
+                    </p>
+                    <p>
+                        <label for="txt-add-genus">Genus: </label>
+                        <input id="txt-add-genus">
+                    </p>
+                    <p>
+                        <label for="txt-add-life-span">Life Span: </label>
+                        <input id="txt-add-life-span">
+                    </p>
+                    <p>
+                        <label for="txt-add-height">Average Height: </label>
+                        <input id="txt-add-height">
+                    </p>
+                    <p>
+                        <label for="txt-add-continents">Continents (',' delimited): </label>
+                        <textarea id="txt-add-continents">
+                        </textarea>
+                    </p>
+                    <button id="btn-add-plant">Add Plant</button>
+                </div>
+            </div>    
         </div>
-        <div id="form">
-            <div id="plant-details" class="plant-form hidden">
-                <h2 class="panel">Plant Details</h2>
-                <span id = "span-response-details"></span>
-                <span id = "plant-id" class="hidden"></span>
-                <p>
-                    <label for="txt-name">Name: </label>
-                    <input id="txt-name">
-                </p>
-                <p>
-                    <label for="txt-species">Species: </label>
-                    <input id="txt-species">
-                </p>
-                <p>
-                    <label for="txt-genus">Genus: </label>
-                    <input id="txt-genus">
-                </p>
-                <p>
-                    <label for="txt-life-span">Life Span: </label>
-                    <input id="txt-life-span">
-                </p>
-                <p>
-                    <label for="txt-height">Height: </label>
-                    <input id="txt-height">
-                </p>
-                <p>
-                    <label for="txt-continents">Continents: </label>
-                    <input id="txt-continents">
-                </p>
-                <button id="btn-edit-plant">Edit Plant</button>
-                <button id="btn-delete-plant">Delete Plant</button>
-            </div>
-            <div id="add-plant" class="plant-form hidden">
-                <h2 class = "panel">Add Plant</h2>
-                <span id = "span-response-add"></span>
-                <p>
-                    <label for="txt-add-name">Name: </label>
-                    <input id="txt-add-name">
-                </p>
-                <p>
-                    <label for="txt-add-species">Species: </label>
-                    <input id="txt-add-species">
-                </p>
-                <p>
-                    <label for="txt-add-genus">Genus: </label>
-                    <input id="txt-add-genus">
-                </p>
-                <p>
-                    <label for="txt-add-life-span">Life Span: </label>
-                    <input id="txt-add-life-span">
-                </p>
-                <p>
-                    <label for="txt-add-height">Average Height: </label>
-                    <input id="txt-add-height">
-                </p>
-                <p>
-                    <label for="txt-add-continents">Continents (',' delimited): </label>
-                    <input id="txt-add-continents">
-                </p>
-                <button id="btn-add-plant">Add Plant</button>
-            </div>
-        </div>
-        <div id ="plants-div">
+        <div id="plants-div">
         </div>
     </body>
 </html>

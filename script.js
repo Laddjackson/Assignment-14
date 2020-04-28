@@ -65,9 +65,8 @@ async function showPlantDetails(){
     //Listing continents
     let plantContinentsString = "";
     for(let i = 0; i <= plant.continents.length-1; ++i) {
-        plantContinentsString = plantContinentsString.concat(plant.continents[i],' , ');
+        plantContinentsString = plantContinentsString.concat(plant.continents[i],', ');
     }
-    console.log("Plant Continent STRING: "+plantContinentsString);
     document.getElementById("txt-continents").value = plantContinentsString;
 }
 

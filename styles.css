@@ -1,22 +1,30 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("images/plantbkg.jpg");
+    display: flex;
+}
+
+#content {
+    width: 40%;
+    background: rgba(58, 84, 41, 0.37);
+    padding: 5px;
 }
 
 h1 {
-    background-color: #EFEBE8;
+    background-color: #B8D4A7;
     margin: auto;
-    padding: 40px 20%;
+    padding: 40px;
     border-radius: 5px;
     color: black;
     text-align: center;
-    transition: all 500ms ease; 
+    transition: all 500ms ease;
+    border: #00000000 solid 5px;
 }
 
 h1:hover {
     color: black;
     border: #000000 solid 5px;
-    background:rgb(245, 244, 243);
+    background:#B8D4A7;
 }
 
 #div-intro-content {
@@ -38,14 +46,23 @@ h1:hover {
     display: flex;
 }
 
+#form h2 {
+    text-align: center;
+}
+
+#form p {
+    text-align: right;
+}
+
 #div-command-panel {
     text-align: center;
     border-radius: 5px;
     width: 20%;
     padding: 10px;
-    background: #B87D69;
+    background: #8CA17F;
     position: relative;
     transition: all 500ms ease; 
+    border: #00000000 solid 5px;
 }
 
 #div-command-panel button {
@@ -57,31 +74,37 @@ h1:hover {
 #div-command-panel:hover {
     color: black;
     border: #000000 solid 5px;
-    background:rgb(197, 110, 80);
+    background:#8CA17F;
+}
+
+#plant-div {
+    background-color: brown;
+    width: 60%;
 }
 
 .plant {
     margin: 5px;
     border: none;
-    background: rgb(186, 186, 231);
+    background: #B8D4A7;
     color: black;
-    padding: 10px 50px;
+    padding: 10px 50px 10px 70px;
     border-radius: 5px;
     position: relative;
-    transition: all 500ms ease; 
+    transition: all 500ms ease;
+    border: #00000000 solid 5px;
 }
 
 .plant:hover {
     color: black;
     border: #000000 solid 5px;
-    background:rgb(149, 149, 255);
+    background:#B8D4A7;
 }
 
 .plant-form {
     margin: auto;
     border-radius: 10px;
     border: solid 5px black;
-    padding: 40px 100px 40px 100px;
+    padding: 40px 40px;
     background-color: #506B3D;
 }
 
